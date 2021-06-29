@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+Создание нового шаблона? Скопируйте блоки из этого файла, а затем заполните свои данные по мере необходимости.
+Убедитесь, что тег "extends" остается первой строкой в файле, как того требует Django.
+И не стесняйтесь удалять блоки, которые вам не нужно менять.
+
+Кстати, обратите внимание, как этот текст не отображается на странице?
+При расширении шаблона все содержимое, не содержащееся в каком-либо теге "блок", будет исключено.
+
+{# Или вы можете использовать теги комментариев Django для обеспечения безопасности #}
+
+{% block head_extra_meta %}{# <meta> tags go here #}{% endblock %}
+
+{% block head_css %}{# additional <link> tags for CSS #}{% endblock %}
+
+{% block head_js %}{# <script defer> tags for deferred JS only #}{% endblock head_js %}
+
+{% block head_title %}{# Page title. Base page has " | MFC"; follow this pattern for sub-page titling #}{% endblock %}
+
+{% block body_container_classes %}{# Add classes to the main <div> wrapping body content #}{% endblock %}
+
+{% block body_content %}
+{# All your page content goes here! #}
+{% endblock %}
+
+{% block body_js %}
+{# Inline or other types of JS <script> tags here. #}
+{# Remember we've already got jQuery and Bootstrap bundle with Popper loaded. #}
+{% endblock %}

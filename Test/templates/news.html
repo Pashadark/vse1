@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Новости{% endblock %}
+{% block body_content %}
+  {% comment %}
+    Готовы приступить к работе? Удалите этот комментарий и "включить" ниже, а затем добавьте свой собственный контент.
+    Не стесняйтесь оставить `welcome_wagon.html-шаблон в качестве ссылки, однако!
+    ПРИМЕЧАНИЕ Содержимое навигационной панели и нижнего колонтитула обрабатывается их собственными виджетамии `включить в `base.html".
+  {% endcomment %}
+<main>
+      <article class="article article--news">
+        <header class="article__header">
+          <div class="container">
+            <h1 class="article__heading heading heading--size-large">Новости</h1>
+            <!-- Filter projects-->
+            <div class="article__filter filter">
+              <button class="filter__item filter__item--active __js_filter-btn" type="button" data-filter="*">Все</button>
+              <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_inspiration">Финансы</button>
+              <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_decoration">Про нас</button>
+              <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_plants">Новости</button>
+              <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_architecture">Новости</button>
+              <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_interior">Новости</button>
+            </div>
+          </div>
+        </header>
+        <div class="article__main article__main--width-full container">
+          <ul class="news-listing row __js_news-grid">
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_interior">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-1.jpg' %}" srcset="img/picture/news/masonry/item-1@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 03, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_architecture">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-2.jpg' %}" srcset="img/picture/news/masonry/item-2@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 03, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_plants">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-3.jpg' %}" srcset="img/picture/news/masonry/item-3@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 03, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_decoration">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-4.jpg' %}" srcset="img/picture/news/masonry/item-4@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 03, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_inspiration">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-6.jpg' %}" srcset="img/picture/news/masonry/item-6@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 03, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_interior">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-5.jpg' %}" srcset="img/picture/news/masonry/item-5@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_architecture">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-8.jpg' %}" srcset="img/picture/news/masonry/item-8@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_plants">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-7.jpg' %}" srcset="img/picture/news/masonry/item-7@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_decoration">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-10.jpg' %}" srcset="img/picture/news/masonry/item-10@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_inspiration">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-12.jpg' %}" srcset="img/picture/news/masonry/item-12@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_interior">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-9.jpg' %}" srcset="img/picture/news/masonry/item-9@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-listing__item news-listing__item--auto col-12 col-md-6 col-xl-3 __js_masonry-item __js_architecture">
+              <div class="card card--small card--masonry card--news card--news-masonry">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/news/masonry/item-11.jpg' %}" srcset="img/picture/news/masonry/item-11@2x.jpg 2x" alt="">
+                </div>
+                <div class="card__content card__content--full">
+                  <div class="card__date">Май 05, 2021</div>
+                  <h3 class="card__heading">Заголовок новости</h3>
+                  <div class="card__text">Очень увлекательный текст новости,
+                    <br> который можно читать долго.
+                    <br> Очень долго.
+                  </div>
+                  <div class="card__bottom">
+                    <a class="card__link" href="projects-detail-dark.html">Читать далее
+                      <svg width="20" height="20">
+                        <use xlink:href="#chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+</main>
+
+{% endblock %}
+
+{% block body_js %}
+  {# Add your JavaScript content here, where it will be included at the end of the <body> tag. #}
+{% endblock %}

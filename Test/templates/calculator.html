@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Калькулятор{% endblock %}
+{% block body_content %}
+  {% comment %}
+    Готовы приступить к работе? Удалите этот комментарий и "включить" ниже, а затем добавьте свой собственный контент.
+    Не стесняйтесь оставить `welcome_wagon.html-шаблон в качестве ссылки, однако!
+    ПРИМЕЧАНИЕ Содержимое навигационной панели и нижнего колонтитула обрабатывается их собственными виджетамии `включить в `base.html".
+  {% endcomment %}
+<main>
+      <article class="article">
+        <header class="article__header">
+          <div class="container">
+            <h1 class="article__heading heading heading--size-large">Калькулятор</h1>
+          </div>
+        </header>
+        <div class="article__main container">
+          <section class="article__feedback feedback">
+            <h2 class="feedback__heading heading" data-aos="fade">Расчет банковской гарантии
+              <br>в <span class="color-yellow">60-ти банках-партнерах</span>
+            </h2>
+            <form class="js-form-validate" action="php/mail.php" method="POST">
+              <div class="row">
+                <div class="feedback__field-wrapper col-12 col-md-6 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Name">
+                    <input  type="text" name="id" placeholder="Номер закупки">
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+                <div class="feedback__field-wrapper col-12 col-md-6 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Email">
+                    <input type="email" name="email" placeholder="Тип контракта" required>
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+                <div class="feedback__field-wrapper col-12 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Subject">
+                    <input type="text" name="subject" placeholder="Сумма гарантии">
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+                  <div class="feedback__field-wrapper col-12 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Subject">
+                    <input type="text" name="subject" placeholder="Продукт">
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+                  <div class="feedback__field-wrapper col-12 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Subject">
+                    <input type="text" name="subject" placeholder="Начало">
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+                  <div class="feedback__field-wrapper col-12 col-lg-4" data-aos="fade">
+                  <label class="field" aria-label="Subject">
+                    <input type="text" name="subject" placeholder="Окончание">
+                  </label>
+                  <div class="field-error" style="display: none"></div>
+                </div>
+              </div>
+              <button class="btn" type="submit" data-aos="fade">Сделать расчет</button>
+            </form>
+          </section>
+        </div>
+      </article>
+</main>
+
+{% endblock %}
+
+{% block body_js %}
+  {# Add your JavaScript content here, where it will be included at the end of the <body> tag. #}
+{% endblock %}

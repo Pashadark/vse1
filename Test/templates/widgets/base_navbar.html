@@ -1,0 +1,168 @@
+{% load static %}
+<header class="header header--half __js_no-static __js_fixed-header">
+      <div class="header__inner">
+        <!-- Logo-->
+        <a class="header__logo logo">
+          <img class="logo__large" alt="mcfin" src="{% static 'img/picture/logo.svg' %}" style="height: 40px;">
+        </a>
+        <div class="container"></div>
+        <a class="header__phone" href="tel:+78003016142"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+</svg></a>
+        <!-- Burger-->
+        <button class="header__menu-toggle menu-toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+    </header>
+    <!-- Site menu-->
+    <div class="mobile-canvas __js_mobile-canvas">
+      <button class="mobile-canvas__close" type="button">
+        <svg width="24" height="24">
+          <use xlink:href="#close"></use>
+        </svg>
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <!-- Lang switcher-->
+      <ul class="mobile-canvas__lang-switcher lang-switcher lang-switcher--menu">
+        <li class="lang-switcher__item">
+          <a class="lang-switcher__link lang-switcher__link--current">Rus</a>
+        </li>
+        <li class="lang-switcher__item">
+          <a class="lang-switcher__link" href="#">Eng</a>
+        </li>
+        <li class="lang-switcher__item">
+          <a class="lang-switcher__link" href="#">Ger</a>
+        </li>
+      </ul>
+      <nav class="mobile-canvas__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="{% url 'homepage' %}">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link animsition-link" href="{% url 'about' %}">О нас</a>
+            <div class="navigation__dropdown navigation__dropdown--columns">
+              <div class="navigation__dropdown-wrapper">
+                <div class="navigation__dropdown-column">
+                  <ul class="navigation__dropdown-list">
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Конкурентные преимущества</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Отзывы клиентов</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Наша профессиональная команда</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Работа у нас</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link animsition-link" href="{% url 'homepage' %}">Услуги</a>
+            <div class="navigation__dropdown navigation__dropdown--columns">
+              <div class="navigation__dropdown-wrapper">
+                <div class="navigation__dropdown-column">
+                  <div class="navigation__dropdown-column-title">Финансы</div>
+                  <ul class="navigation__dropdown-list">
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Кредит на исполнение контракта</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Спец. счет в Промсвязьбанке напрямую</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="#">Тендерный займ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navigation__dropdown-column">
+                  <div class="navigation__dropdown-column-title">Гарантии</div>
+                  <ul class="navigation__dropdown-list">
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-grid-dark.html">Банковские гарантии</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-grid-dark.html">Гарантия по 44-ФЗ</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-grid-2-dark.html">Гарантия на возврат НДС</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-masonry-dark.html">Гарантия на обеспечение гарантийных обязательств</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-masonry-2-dark.html">Гарантия на участие</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-carousel-dark.html">Гарантия по 223-ФЗ</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-detail-dark.html">Коммерческие гарантии</a>
+                    </li>
+                    <li class="navigation__dropdown-item">
+                      <a class="animsition-link" href="projects-detail-2-dark.html">Таможенные гарантии</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link animsition-link" href="{% url 'news' %}">Новости</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link animsition-link" href="{% url 'calculator' %}">Калькулятор</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link animsition-link" href="{% url 'contact' %}">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-canvas__bottom">
+        <a class="mobile-canvas__phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
+        <div class="mobile-canvas__copy">
+          © 2021 <span>Московский Центр Финансирования</span> Ваш надежный партнер.
+          <br>Разработанно с ❤ <span>Pavel Tur</span>
+        </div>
+        <!-- Social-->
+        <ul class="mobile-canvas__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <svg width="20" height="20" aria-label="facebook icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <svg width="20" height="20" aria-label="twitter icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <svg width="20" height="20" aria-label="google-plus icon">
+                <use xlink:href="#google-plus"></use>
+              </svg>
+              <span class="visually-hidden">google-plus</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <svg width="20" height="20" aria-label="linkedin-original icon">
+                <use xlink:href="#linkedin-original"></use>
+              </svg>
+              <span class="visually-hidden">linkedin-original</span>
+            </a>
+          </li>
+        </ul>
+      </div>

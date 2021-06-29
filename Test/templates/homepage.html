@@ -1,0 +1,349 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Главная{% endblock %}
+
+{% block body_content %}
+  {% comment %}
+    Готовы приступить к работе? Удалите этот комментарий и "включить" ниже, а затем добавьте свой собственный контент.
+    Не стесняйтесь оставить `welcome_wagon.html-шаблон в качестве ссылки, однако!
+    ПРИМЕЧАНИЕ Содержимое навигационной панели и нижнего колонтитула обрабатывается их собственными виджетамии `включить в `base.html".
+  {% endcomment %}
+<main>
+      <section class="webpage__hero hero">
+        <div class="hero__inner">
+          <div class="hero__image">
+            <img src="{% static 'img/picture/1.png' %}" srcset="img/picture/hero@2x.jpg 2x" width="400" height="400" alt="">
+          </div>
+          <div class="hero__content">
+            <div class="container">
+              <div class="hero__tag">2021</div>
+              <h2 class="hero__heading heading">Ваш <span class="color-yellow">надежный</span>партнер</h2>
+              <div class="hero__text">Московский Центр Финансирования бесплатно оказывает услуги организациям и индивидуальным предпринимателям. Уже более 6 лет мы успешно сотрудничаем с более 60 банками, входящие в топ-100 кредитно-финансовых учреждений России, именно это позволяет гарантировать одобрение и получать актуальную информацию по условиям и нюансам банковских гарантий. Большая часть заявок на оформление гарантии рассматривается в упрощенной форме.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="webpage__about-block about-block">
+          <div class="about-block__inner container" data-number="03.">
+            <header class="about-block__header" data-aos="fade">
+              <h2 class="about-block__heading heading">Конкурентные преимущества</h2>
+            </header>
+            <div class="about-block__main services-provided">
+              <div class="row">
+                <div class="services-provided__column col-12 col-md" data-aos="fade">
+                  <div class="services-provided__icon">
+                    <svg width="58" height="61">
+                      <use xlink:href="#apartment"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Текст</h3>
+                  <div class="services-provided__column-text">Текст</div>
+                  <a class="services-provided__link" href="single-services.html">Читать далее
+                    <svg width="20" height="20">
+                      <use xlink:href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="services-provided__column col-12 col-md" data-aos="fade" data-aos-delay="200">
+                  <div class="services-provided__icon">
+                    <svg width="52" height="61">
+                      <use xlink:href="#building"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Текст</h3>
+                  <div class="services-provided__column-text">Текст</div>
+                </div>
+                <div class="services-provided__column col-12 col-md" data-aos="fade" data-aos-delay="400">
+                  <div class="services-provided__icon">
+                    <svg width="58" height="52">
+                      <use xlink:href="#roller"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Текст</h3>
+                  <div class="services-provided__column-text">Текст</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  </section>
+      <div class="webpage__statistics statistics" data-aos="fade">
+        <div class="container">
+          <div class="row">
+            <div class="statistics__item col-12 col-sm">
+              <div class="statistics__item-value">
+                <span class="__js_number" data-end-value="8">0</span>
+              </div>
+              <div class="statistics__item-text">Лет
+                <br>на рынке
+              </div>
+            </div>
+            <div class="statistics__item col-12 col-sm">
+              <div class="statistics__item-value">
+                <span class="__js_number" data-end-value="61">0</span>
+              </div>
+              <div class="statistics__item-text">банк-партнер
+              </div>
+            </div>
+            <div class="statistics__item col-12 col-lg">
+              <div class="statistics__item-value">
+                <span class="__js_number" data-end-value="2569">0</span>
+              </div>
+              <div class="statistics__item-text">Довольных
+                <br>клиентов
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg btn-block"value="Input Button" onclick=" relocate_home()">Отправить заявку</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="webpage__team-section team-section">
+        <div class="team-section__inner container">
+          <header class="team-section__header" data-aos="fade">
+            <h2 class="team-section__heading heading">Ваша профессиональная команда </h2>
+          </header>
+          <ul class="team-section__list team-list row">
+            <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="0">
+              <div class="card card--team" tabindex="0">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/team/1.jpg' %}" srcset="img/picture/team/1@2x.jpg 2x" width="350" height="530" alt="">
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Сергей Золоторев</h3>
+                  <div class="card__text">Генеральный директор</div>
+                  <div class="card__bottom">
+                    <!-- Social-->
+                    <ul class="card__social social">
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="facebook icon">
+                            <use xlink:href="#facebook"></use>
+                          </svg>
+                          <span class="visually-hidden">facebook</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="twitter icon">
+                            <use xlink:href="#twitter"></use>
+                          </svg>
+                          <span class="visually-hidden">twitter</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="linkedin-original icon">
+                            <use xlink:href="#linkedin-original"></use>
+                          </svg>
+                          <span class="visually-hidden">linkedin-original</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="200">
+              <div class="card card--team" tabindex="0">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/team/2.jpg' %}" srcset="img/picture/team/2@2x.jpg 2x" width="350" height="530" alt="">
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Имя Фамилия</h3>
+                  <div class="card__text">Должность / Отдел</div>
+                  <div class="card__bottom">
+                    <!-- Social-->
+                    <ul class="card__social social">
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="facebook icon">
+                            <use xlink:href="#facebook"></use>
+                          </svg>
+                          <span class="visually-hidden">facebook</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="twitter icon">
+                            <use xlink:href="#twitter"></use>
+                          </svg>
+                          <span class="visually-hidden">twitter</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="linkedin-original icon">
+                            <use xlink:href="#linkedin-original"></use>
+                          </svg>
+                          <span class="visually-hidden">linkedin-original</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="400">
+              <div class="card card--team" tabindex="0">
+                <div class="card__image">
+                  <img src="{% static 'img/picture/team/3.jpg' %}"srcset="img/picture/team/3@2x.jpg 2x" width="350" height="530" alt="">
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Имя Фамилия</h3>
+                  <div class="card__text">Должность / Отдел</div>
+                  <div class="card__bottom">
+                    <!-- Social-->
+                    <ul class="card__social social">
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="facebook icon">
+                            <use xlink:href="#facebook"></use>
+                          </svg>
+                          <span class="visually-hidden">facebook</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="twitter icon">
+                            <use xlink:href="#twitter"></use>
+                          </svg>
+                          <span class="visually-hidden">twitter</span>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                          <svg width="20" height="20" aria-label="linkedin-original icon">
+                            <use xlink:href="#linkedin-original"></use>
+                          </svg>
+                          <span class="visually-hidden">linkedin-original</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="webpage__latest-news latest-news">
+        <div class="container">
+          <header class="latest-news__header" data-aos="fade">
+            <h2 class="latest-news__heading heading">Актуальные новости</h2>
+            <a class="latest-news__more more" href="{% url 'news' %}">Открыть все
+              <svg width="20" height="20">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </header>
+          <div class="row">
+            <div class="latest-news__item col-12 col-lg-4">
+              <div class="preview-card" tabindex="0" data-aos="fade">
+                <div class="preview-card__image">
+                  <img src="{% static 'img/picture/latest-news/1.jpg' %}" srcset="img/picture/latest-news/1@2x.jpg 2x" width="350" height="352" alt="" />
+                </div>
+                <div class="preview-card__content">
+                  <time class="preview-card__date" datetime="2020-06-03">Май 03, 2021</time>
+                  <h3 class="preview-card__heading">Заголовок новости</h3>
+                  <div class="preview-card__text">Очень увлекательный текст новости, который можно читать долго. Очень долго</div>
+                  <a class="preview-card__btn" href="single-post-dark.html">Читать далее
+                    <svg width="20" height="20">
+                      <use xlink:href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="latest-news__item col-12 col-lg-4">
+              <div class="preview-card" tabindex="0" data-aos="fade">
+                <div class="preview-card__image">
+                  <img src="{% static 'img/picture/latest-news/2.jpg' %}" srcset="img/picture/latest-news/2@2x.jpg 2x" width="350" height="352" alt="" />
+                </div>
+                <div class="preview-card__content">
+                  <time class="preview-card__date" datetime="2020-06-08">Май 03, 2021</time>
+                  <h3 class="preview-card__heading">Заголовок новости</h3>
+                  <div class="preview-card__text">Очень увлекательный текст новости, который можно читать долго. Очень долго</div>
+                  <a class="preview-card__btn" href="single-post-dark.html">Читать далее
+                    <svg width="20" height="20">
+                      <use xlink:href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="latest-news__item col-12 col-lg-4">
+              <div class="preview-card" tabindex="0" data-aos="fade">
+                <div class="preview-card__image">
+                  <img src="{% static 'img/picture/latest-news/3.jpg' %}" srcset="img/picture/latest-news/3@2x.jpg 2x" width="350" height="352" alt="" />
+                </div>
+                <div class="preview-card__content">
+                  <time class="preview-card__date" datetime="2020-06-12">Май 03, 2021</time>
+                  <h3 class="preview-card__heading">Заголовок новости</h3>
+                  <div class="preview-card__text">Очень увлекательный текст новости, который можно читать долго. Очень долго</div>
+                  <a class="preview-card__btn" href="single-post-dark.html">Читать далее
+                    <svg width="20" height="20">
+                      <use xlink:href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners-->
+      <section class="webpage__partners partners">
+        <div class="partners__inner container">
+          <header class="team-section__header" data-aos="fade">
+            <h2 class="team-section__heading heading">Банки партнеры</h2>
+          </header>
+          <br>
+          <br>
+          <ul class="partners__list">
+            <li class="partners__item" data-aos="fade" data-aos-delay="0">
+              <img src="{% static 'img/picture/partners/1w.png' %}" srcset="img/picture/partners/1w@2x.png 2x" width="117" height="47" alt="behr handelsagentur">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="200">
+              <img src="{% static 'img/picture/partners/2w.png' %}" srcset="img/picture/partners/2w@2x.png 2x" width="139" height="68" alt="christopher willis">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="400">
+              <img src="{% static 'img/picture/partners/3w.png' %}" srcset="img/picture/partners/3w@2x.png 2x" width="150" height="45" alt="artchive crafts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/4w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/5w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/6w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/7w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/8w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/9w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+            <li class="partners__item" data-aos="fade" data-aos-delay="600">
+              <img src="{% static 'img/picture/partners/10w.png' %}" srcset="img/picture/partners/4w@2x.png 2x" width="125" height="32" alt="artchive crasfts gallery">
+            </li>
+          </ul>
+        </div>
+      </section>
+  <script>
+function relocate_home()
+{
+     location.href = "{% url 'calculator' %}";
+}
+</script>
+    </main>
+{% endblock %}
+
+{% block body_js %}
+  {# Add your JavaScript content here, where it will be included at the end of the <body> tag. #}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Новости{% endblock %}
+{% block body_content %}
+  {% comment %}
+    Готовы приступить к работе? Удалите этот комментарий и "включить" ниже, а затем добавьте свой собственный контент.
+    Не стесняйтесь оставить `welcome_wagon.html-шаблон в качестве ссылки, однако!
+    ПРИМЕЧАНИЕ Содержимое навигационной панели и нижнего колонтитула обрабатывается их собственными виджетамии `включить в `base.html".
+  {% endcomment %}
+
+<main>
+      <article class="page-404">
+        <div class="container page-404__container">
+          <div class="page-404__num">404</div>
+          <div class="page-404__title">Ой! Что-то пошло не так!</div>
+          <div class="page-404__text">Похоже, мы не можем найти то, что вы ищете. Возможно, поиск может помочь или вернуться к
+            <br>
+            <a href="{% url 'homepage' %}">Главная</a>
+          </div>
+          <input class="page-404__search" type="search" name="search" placeholder="Поиск" />
+        </div>
+      </article>
+</main>
+
+{% endblock %}
+
+{% block body_js %}
+  {# Add your JavaScript content here, where it will be included at the end of the <body> tag. #}
+{% endblock %}

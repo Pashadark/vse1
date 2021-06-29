@@ -1,0 +1,374 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}О нас{% endblock %}
+{% block body_content %}
+  {% comment %}
+    Готовы приступить к работе? Удалите этот комментарий и "включить" ниже, а затем добавьте свой собственный контент.
+    Не стесняйтесь оставить `welcome_wagon.html-шаблон в качестве ссылки, однако!
+    ПРИМЕЧАНИЕ Содержимое навигационной панели и нижнего колонтитула обрабатывается их собственными виджетамии `включить в `base.html".
+  {% endcomment %}
+<main>
+      <article class="article">
+        <header class="article__header">
+          <div class="container">
+            <h1 class="article__heading heading heading--size-large">Стратегия:<br>
+              проработка
+              <span class="color-yellow">каждой</span> детали
+            </h1>
+          </div>
+        </header>
+        <div class="article__about-hero container">
+          <img src="{% static 'img/picture/about/hero.jpg' %}" width="1800" height="768" alt="">
+        </div>
+        <section class="webpage__about-block about-block about-block--columns">
+          <div class="about-block__inner container" data-number="01.">
+            <header class="about-block__header" data-aos="fade">
+              <h2 class="about-block__heading heading">Почему мы</h2>
+            </header>
+            <div class="about-block__main">
+              <div class="about-block__text" data-aos="fade">
+                <p>Миссия компании - Мы экономим время и деньги клиента, облегчая и упрощая получение банковских продуктов.</p>
+                <p>Ценности – для нас важен каждый клиент, который доверил нам сопровождение своей компании. Наша работа строится на индивидуальном подходе к каждому клиенту, его деятельности, ресурсам и потребности.</p>
+                <p>Приоритеты – мы преследуем интересы клиента при согласовании условий получения финансовых продуктов (банковских гарантий и тендерных займов). Благодаря нашим партнерским отношениям со многими банками, мы всегда подбираем для клиента оптимальный вариант банковского продукта.</p>
+              </div>
+              <blockquote class="about-block__quote" data-aos="fade">Специалист, который все усложняет работает неправильно.
+                <br>Профессионал должен уметь делать вещи простыми.
+              </blockquote>
+            </div>
+          </div>
+        </section>
+        <section class="webpage__about-block about-block">
+          <div class="about-block__inner container" data-number="02.">
+            <header class="about-block__header" data-aos="fade">
+              <h2 class="about-block__heading heading">Наша профессиональная команда</h2>
+            </header>
+            <div class="about-block__main">
+              <ul class="about-block__team team-list row">
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="0">
+                  <div class="card card--team" tabindex="0">
+                    <div class="card__image">
+                      <img src="{% static 'img/picture/team/1.jpg' %}" srcset="{% static 'img/picture/team/1@2x.jpg' %}" width="350" height="530" alt="">
+                    </div>
+                    <div class="card__content">
+                      <h3 class="card__heading">Имя Фамилия</h3>
+                      <div class="card__text">Должность / Отдел</div>
+                      <div class="card__bottom">
+                        <!-- Social-->
+                        <ul class="card__social social">
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="facebook icon">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              <span class="visually-hidden">facebook</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="twitter icon">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              <span class="visually-hidden">twitter</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="linkedin-original icon">
+                                <use xlink:href="#instagram"></use>
+                              </svg>
+                              <span class="visually-hidden">linkedin-original</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="200">
+                  <div class="card card--team" tabindex="0">
+                    <div class="card__image">
+                      <img src="{% static 'img/picture/team/2.jpg' %}" srcset="{% static 'img/picture/team/2@2x.jpg' %}" width="350" height="530" alt="">
+                    </div>
+                    <div class="card__content">
+                      <h3 class="card__heading">Имя Фамилия</h3>
+                      <div class="card__text">Должность / Отдел</div>
+                      <div class="card__bottom">
+                        <!-- Social-->
+                        <ul class="card__social social">
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="facebook icon">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              <span class="visually-hidden">facebook</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="twitter icon">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              <span class="visually-hidden">twitter</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="linkedin-original icon">
+                                <use xlink:href="#linkedin-original"></use>
+                              </svg>
+                              <span class="visually-hidden">linkedin-original</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="400">
+                  <div class="card card--team" tabindex="0">
+                    <div class="card__image">
+                      <img src="{% static 'img/picture/team/3.jpg' %}" srcset="{% static 'img/picture/team/3@2x.jpg' %}" width="350" height="530" alt="">
+                    </div>
+                    <div class="card__content">
+                      <h3 class="card__heading">Имя Фамилия</h3>
+                      <div class="card__text">Должность / Отдел</div>
+                      <div class="card__bottom">
+                        <!-- Social-->
+                        <ul class="card__social social">
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="facebook icon">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              <span class="visually-hidden">facebook</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="twitter icon">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              <span class="visually-hidden">twitter</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="linkedin-original icon">
+                                <use xlink:href="#linkedin-original"></use>
+                              </svg>
+                              <span class="visually-hidden">linkedin-original</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="0">
+                  <div class="card card--team" tabindex="0">
+                    <div class="card__image">
+                      <img src="{% static 'img/picture/team/4.jpg' %}" srcset="{% static 'img/picture/team/4@2x.jpg' %}" width="350" height="530" alt="">
+                    </div>
+                    <div class="card__content">
+                      <h3 class="card__heading">Имя Фамилия</h3>
+                      <div class="card__text">Должность / Отдел</div>
+                      <div class="card__bottom">
+                        <!-- Social-->
+                        <ul class="card__social social">
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="facebook icon">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              <span class="visually-hidden">facebook</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="twitter icon">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              <span class="visually-hidden">twitter</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="linkedin-original icon">
+                                <use xlink:href="#linkedin-original"></use>
+                              </svg>
+                              <span class="visually-hidden">linkedin-original</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="200">
+                  <div class="card card--team" tabindex="0">
+                    <div class="card__image">
+                      <img src="{% static 'img/picture/team/5.jpg' %}" srcset="{% static 'img/picture/team/5@2x.jpg' %}" width="350" height="530" alt="">
+                    </div>
+                    <div class="card__content">
+                      <h3 class="card__heading">Имя Фамилия</h3>
+                      <div class="card__text">Должность / Отдел</div>
+                      <div class="card__bottom">
+                        <!-- Social-->
+                        <ul class="card__social social">
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="facebook icon">
+                                <use xlink:href="#facebook"></use>
+                              </svg>
+                              <span class="visually-hidden">facebook</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="twitter icon">
+                                <use xlink:href="#twitter"></use>
+                              </svg>
+                              <span class="visually-hidden">twitter</span>
+                            </a>
+                          </li>
+                          <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                              <svg width="20" height="20" aria-label="linkedin-original icon">
+                                <use xlink:href="#linkedin-original"></use>
+                              </svg>
+                              <span class="visually-hidden">linkedin-original</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="team-list__item col-12 col-md-6 col-lg-4" data-aos="fade" data-aos-delay="400">
+                  <a class="card card--send" href="#">
+                    <div class="card__send-text">Отправить ваше резюме</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="webpage__about-block about-block">
+          <div class="about-block__inner container" data-number="03.">
+            <header class="about-block__header" data-aos="fade">
+              <h2 class="about-block__heading heading">Конкурентные преимущества</h2>
+            </header>
+            <div class="about-block__main services-provided">
+              <div class="row">
+                <div class="services-provided__column col-12 col-md" data-aos="fade">
+                  <div class="services-provided__icon">
+                    <svg width="58" height="61">
+                      <use xlink:href="#apartment"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Apartment</h3>
+                  <div class="services-provided__column-text">Projects for many large domestic and foreign corporations, enProjects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.terprises in many elds such as nance, banking, F&B, education, communication.</div>
+                  <a class="services-provided__link" href="single-services.html">Читать далее
+                    <svg width="20" height="20">
+                      <use xlink:href="#chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="services-provided__column col-12 col-md" data-aos="fade" data-aos-delay="200">
+                  <div class="services-provided__icon">
+                    <svg width="52" height="61">
+                      <use xlink:href="#building"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Building</h3>
+                  <div class="services-provided__column-text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketinge design, brand identity and marketing</div>
+                </div>
+                <div class="services-provided__column col-12 col-md" data-aos="fade" data-aos-delay="400">
+                  <div class="services-provided__icon">
+                    <svg width="58" height="52">
+                      <use xlink:href="#roller"></use>
+                    </svg>
+                  </div>
+                  <h3 class="services-provided__column-heading">Interior</h3>
+                  <div class="services-provided__column-text">Projects for many large domestic and foreign corporations, enProjects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.terprises in many elds such as nance, banking, F&B, education, communication.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="webpage__about-block about-block">
+          <div class="about-block__inner container" data-number="04.">
+            <header class="about-block__header" data-aos="fade">
+              <h2 class="about-block__heading heading">Отзывы клиентов</h2>
+            </header>
+            <div class="about-block__main reviews-carousel" data-aos="fade">
+              <div class="swiper-container __js_review-carousel">
+                <div class="swiper-wrapper">
+                  <div class="reviews-carousel__item review-card swiper-slide">
+                    <div class="review-card__image">
+                      <img src="{% static 'img/picture/avatar-paul.png' %}" srcset="img/picture/avatar-paul@2x.png 2x" width="112" height="112" alt="">
+                    </div>
+                    <div class="review-card__name">Имя Фамилия</div>
+                    <div class="review-card__post">Должность <span>Название организации</span>
+                    </div>
+                    <div class="review-card__text">Тут будет отзыв ваших клиентов. Желательно красочный, и продолжительный</div>
+                  </div>
+                  <div class="reviews-carousel__item review-card swiper-slide">
+                    <div class="review-card__image">
+                      <img src="{% static 'img/picture/avatar-robert.png' %}" srcset="img/picture/avatar-robert@2x.png 2x" width="112" height="112" alt="">
+                    </div>
+                    <div class="review-card__name">Имя Фамилия</div>
+                    <div class="review-card__post">Должность <span>Название организации</span>
+                    </div>
+                    <div class="review-card__text">Тут будет отзыв ваших клиентов. Желательно красочный, и продолжительный</div>
+                  </div>
+                  <div class="reviews-carousel__item review-card swiper-slide">
+                    <div class="review-card__image">
+                      <img src="{% static 'img/picture/avatar-robert.png' %}" srcset="img/picture/avatar-robert@2x.png 2x" width="112" height="112" alt="">
+                    </div>
+                    <div class="review-card__name">Имя Фамилия</div>
+                    <div class="review-card__post">Должность <span>Название организации</span>
+                    </div>
+                    <div class="review-card__text">Тут будет отзыв ваших клиентов. Желательно красочный, и продолжительный</div>
+                  </div>
+                  <div class="reviews-carousel__item review-card swiper-slide">
+                    <div class="review-card__image">
+                      <img src="{% static 'img/picture/avatar-robert.png' %}" srcset="img/picture/avatar-robert@2x.png 2x" width="112" height="112" alt="">
+                    </div>
+                    <div class="review-card__name">Имя Фамилия</div>
+                    <div class="review-card__post">Должность <span>Название организации</span>
+                    </div>
+                    <div class="review-card__text">Тут будет отзыв ваших клиентов. Желательно красочный, и продолжительный</div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="partners">
+          <div class="partners__inner container">
+            <ul class="partners__list">
+              <li class="partners__item" data-aos="fade" data-aos-delay="0">
+                <img src="{% static 'img/picture/partners/1w.png' %}" srcset="img/picture/partners/1w@2x.png 2x 2x" width="117" height="47" alt="behr handelsagentur">
+              </li>
+              <li class="partners__item" data-aos="fade" data-aos-delay="200">
+                <img src="{% static 'img/picture/partners/2w.png' %}" srcset="img/picture/partners/2w@2x.png 2x 2x" width="139" height="68" alt="christopher willis">
+              </li>
+              <li class="partners__item" data-aos="fade" data-aos-delay="400">
+                <img src="{% static 'img/picture/partners/3w.png' %}" srcset="img/picture/partners/3w@2x.png 2x 2x" width="150" height="45" alt="artchive crafts gallery">
+              </li>
+              <li class="partners__item" data-aos="fade" data-aos-delay="600">
+                <img src="{% static 'img/picture/partners/4w.png' %}" srcset="img/picture/partners/4w@2x.png 2x 2x" width="125" height="32" alt="artchive crasfts gallery">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+</main>
+
+{% endblock %}
+
+{% block body_js %}
+  {# Add your JavaScript content here, where it will be included at the end of the <body> tag. #}
+{% endblock %}
